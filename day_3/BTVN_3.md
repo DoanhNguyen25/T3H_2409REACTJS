@@ -11,7 +11,9 @@ Yêu cầu: Tạo một menu điều hướng với các mục menu. Sử dụng
 ![alt text](images-syllabus/btvn/image-2.png)
 
 Bài tập 4:
+
 ![Ảnh 2](images-syllabus/btvn/bt2.png)
 
 Bài tập 5:
+
 ![alt text](images-syllabus/btvn/Screenshot%202024-10-07%20at%2022.52.24.png)

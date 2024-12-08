@@ -12,6 +12,7 @@
 - Cho dữ liệu về users: source: users.js. Mỗi user gồm: id, first_name, last_name, email, password.
 - Cho dữ liệu về posts: source: posts.js. Mỗi post gồm: id, title, content, image, created_at, updated_at, user_id.
 - Hãy thực hiện theo các yêu cầu dưới đây:
+
 a. Xây dựng chức năng đăng nhập
 -Nhập vào email, password từ bàn phím. Nếu không nhập đủ thông tin → In ra “Hãy nhập đầy đủ thông tin”. Tìm trong dữ liệu users có user thỏa mãn email, password.
     +Nếu có user, in ra màn hình “Xin chào” + <tên đầy đủ của user đó>

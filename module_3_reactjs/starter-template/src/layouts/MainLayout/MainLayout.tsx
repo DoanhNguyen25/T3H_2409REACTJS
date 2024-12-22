@@ -1,4 +1,6 @@
+import { builtinModules } from 'module'
 import React from 'react'
+import { NavLink, Link } from 'react-router-dom'
 
 interface Props {
   children?: React.ReactNode
@@ -10,28 +12,41 @@ export default function MainLayout({ children }: Props) {
         <div className='h-full overflow-y-auto bg-gray-100 py-4 px-3 shadow-lg'>
           <ul className='space-y-2'>
             <li>
-              <a
-                href=''
-                className='flex items-center rounded-lg bg-gray-300 p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
+              <NavLink
+                to='/'
+                end
+                className={({ isActive }) =>
+                  `flex items-center rounded-lg ${
+                    isActive ? 'bg-gray-300 font-bold' : ''
+                  } p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
+                }
               >
-                <span className='ml-3 font-bold'>Dashboard</span>
-              </a>
+                <span className={'ml-3 '}>Dashboard</span>
+              </NavLink>
             </li>
             <li>
-              <a
-                href=''
-                className='flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
+              <NavLink
+                to='/staff'
+                className={({ isActive }) =>
+                  `flex items-center rounded-lg ${
+                    isActive ? 'bg-gray-300 font-bold' : ''
+                  } p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
+                }
               >
                 <span className='ml-3'>Staff</span>
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href=''
-                className='flex items-center rounded-lg p-2 text-base font-normal text-gray-900 hover:bg-gray-300'
+              <NavLink
+                to='/about'
+                className={({ isActive }) =>
+                  `flex items-center rounded-lg ${
+                    isActive ? 'bg-gray-300 font-bold' : ''
+                  } p-2 text-base font-normal text-gray-900 hover:bg-gray-300`
+                }
               >
                 <span className='ml-3'>About</span>
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

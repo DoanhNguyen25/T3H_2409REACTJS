@@ -1,6 +1,16 @@
+import { useNavigate, useOutletContext } from 'react-router-dom'
+
 export default function AddStaff() {
+  const navigate = useNavigate()
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault()
+    setTimeout(() => {
+      navigate('/staff/list')
+    }, 1000)
+  }
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className='mb-6'>
         <label htmlFor='email' className='mb-2 block text-sm font-medium text-gray-900 '>
           email

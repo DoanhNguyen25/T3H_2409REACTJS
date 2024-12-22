@@ -10,6 +10,11 @@ const HomePage = () => {
   // const [test, setTest] = useState("string");
   const [sum, setSum] = useState(0);
 
+  function useState(){
+
+    return [state, setState]
+  }
+
   // console.log("giá trị của state", state);
 
   return (

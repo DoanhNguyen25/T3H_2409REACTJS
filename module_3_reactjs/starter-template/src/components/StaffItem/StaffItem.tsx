@@ -1,3 +1,7 @@
+import { useParams } from 'react-router-dom'
+
 export default function StaffItem() {
-  return <div>StaffItem</div>
+  const params = useParams()
+  console.log('testing', params)
+  return <div>StaffItem {params.id}</div>
 }

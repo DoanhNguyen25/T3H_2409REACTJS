@@ -1,22 +1,12 @@
 import "./App.css";
+import HomePage from "./page/HomePage";
+import LoginPage from "./page/LoginPage";
 
 function App() {
-  const arr = [
-    {
-      id: 1,
-      img: "",
-      name: "Vinh",
-      price: 22222,
-    },
-  ];
   return (
     <>
-      {arr.map((item) => (
-        <>
-          <div className="item">Đây là phần tử :{item.id}</div>
-          <div>{item.name}</div>
-        </>
-      ))}
+      {/* <HomePage /> */}
+      <LoginPage />
     </>
   );
 }
